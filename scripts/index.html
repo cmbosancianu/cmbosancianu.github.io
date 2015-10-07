@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Scripts</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <!--[if lt IE 8]>
+<link rel="stylesheet" href="stylesheets/ie.css">
+<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>     
+      <div class="wrapper">
+      <section>
+        <div id="title">
+          <h1>Scripts</h1>
+          <hr>
+          <span class="credits left">Back to <a href="https://manuelbosancianu.github.io">home page</a></span>
+        </div>
+
+<h3>"A man got to have a code" (Omar Little, <i>The Wire</i>)</h3>
+
+<p>A collection of R scripts which I regularly use in my work. Feel free to use and further customize them in any way you need. If you spot a mistake, I'd be grateful if you sent me an email with the problem. In that way I can correct the script and improve it further (I'll credit the help offered).</p>
+
+<h4>Computing ICC for 2-level and 3-level models with <tt>lme4</tt></h4>
+<p>
+The <a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!8116&authkey=!AHmDjTq7kZ2NvDE&ithint=file%2c.R">script</a> includes 3 functions (<tt>ICC.2()</tt>, <tt>ICC.3.1()</tt>, and <tt>ICC.3.2()</tt>). The first is used for 2-level models, while the last two are used for 3-level ones. <tt>ICC.3.1()</tt> will offer an estimate of the level-3 variance as share of total variance, while <tt>ICC.3.2()</tt> will estimate level-2 and level-3 variance as a share of total variance. Both functions take as argument a <tt>lmerMod</tt> class object that is produced by <tt>lmer()</tt> output.
+</p>
+
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>		
+

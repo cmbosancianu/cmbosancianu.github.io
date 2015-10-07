@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Workshops</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <!--[if lt IE 8]>
+<link rel="stylesheet" href="stylesheets/ie.css">
+<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+    <div class="wrapper">
+      <section>
+        <div id="title">
+          <h1>Heidelberg, July 2015</h1>
+          <hr>
+          <span class="credits left">Back to <a href="https://manuelbosancianu.github.io/workshops/index.html">Workshops</a></span>
+        </div>
+
+        <h3>
+<a name="workshops" class="anchor" href="#workshops"><span class="octicon octicon-link"></span></a></h3>
+
+<h1>Applied Regression with R</h1>
+<p>The 2-day workshop (<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!9869&authkey=!AFvsqg254kmVSx8&ithint=file%2cpdf">outline</a>) is intended as an accessible, yet not very introductory, initiation into the R statistical environment. The aim is to quickly familiarize participants with some basic commands of the R software for data manipulation, and quickly move to how R can be used for the workhorse statistical procedure of inferential social science: OLS regression.</p>
+
+<h3>Data</h3>
+<p>The data used throughout the workshop is based on the Quality of Government OECD dataset (Teorell et al. 2015), the version released in January 2015. The codebook can be retrieved from <a href="http://www.qogdata.pol.gu.se/data/qog_oecd_jan15.pdf">here</a>. For each country in the data set, I computed 5-year averages of all variables; these are the cases used in our analysis. For example, in the case of Australia, I computed average values for 1946-1950, 1951-1955, 1956-1960, and so on (naturally, because of missing values on most indicators, our analyses will usually be run on observations from the 1970s onwards).</p>
+
+<h3>Code</h3>
+<p>Each of the days has an associated syntax file (with a ".R" extension). The file contains all instructions for installing needed R packages, reading data and producing statistical output. In addition to these, the file will contain comment on the code, which will appear after a hashtag symbol ("#"). The only thing participants will need to do is replace the working directory in the file to the folder address on their computer, and make sure that the folder structure is the same as mine. That will ensure that no further changes need to be made to the code to make it run on another machine, regardless of whether it is a UNIX or Windows-based system.</p>
+
+<p>With regard to the folder structure, my practice has been to create a different folder for each day, e.g. "/Day-1/". In this folder I usually create 4 sub-folders: <b>Code</b> ("/Day-1/Code/"), <b>Data</b>, <b>Graphs</b>, and <b>Output</b>. The first two are where the syntax file and the data are deposited, while the last two are where graphs and statistical output (tables) are exported. Every syntax file below assumes that these same folders exist on your computer as well.</p>
+
+<h3>Materials</h3>
+Please download the materials found below, arranged based on session. The syntax and unpacked data files should be placed in their respective folders on your machine.
+<p> <b>Day 1 (July 6)</b>
+<ul>
+<li>Code [available upon request]</li>
+<li>Data [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!9862&authkey=!AGCC9bviKMnIbrQ&ithint=file%2czip">ZIP</a>]</li>
+<li>Slides [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!9867&authkey=!AMSYy5zw22bcPbM&ithint=file%2cpdf">PDF</a>]</li>
+<li>Code for installing many packages at once [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!9866&authkey=!ADaoRWluZT9Xpxk&ithint=file%2cR">R</a>]</li>
+</ul>
+</p>
+
+<p> <b>Day 2 (July 9)</b>
+<ul>
+<li>Code [available upon request]</li>
+<li>Data [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!9868&authkey=!AAEHNI6N_6YwUcc&ithint=file%2czip">ZIP</a>]</li>
+<li>Slides [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!9871&authkey=!AK4Xy3IBytfAn48&ithint=file%2cpdf">PDF</a>]</li>
+</ul>
+</p>
+
+<h3>References</h3>
+<p>Teorell, Jan, Staffan Kumlin, Stefan Dahlberg, Sören Holmberg, Bo Rothstein, Felix Hartmann &amp; Richard Svensson. 2015. <i>The Quality of Government OECD Dataset, version Jan15</i>. University of Gothenburg: The Quality of Government Institute, <a href="http://www.qog.pol.gu.se">http://www.qog.pol.gu.se</a>.</p>
