@@ -51,10 +51,10 @@ between 1980 and 2000. The data comes from Carmen Reinhart and Kenneth Rogoff
 [<a href="http://www.carmenreinhart.com/data/browse-by-topic/topics/7/">URL</a>] and covers the 1800-2007 period.
 For the purposes of my analysis, I considerably restricted the period, and focused only on sovereign debt crises.</p>
 
-<p>On the second day, I rely on two medical data sets, both used in Hosmer, Jr. and Lemeshow (1999). The first data
-source, called <tt>hmohiv</tt> tracks 100 patients from a US HMO who are infected with HIV, up to the point of their
-death, or loss to study (hypothetical data). Information is available about their age upon entering the study, as 
-well as their prior drug use. The data is available here 
+<p>On the second day, I rely on three medical data sets, of which the first two are used in Hosmer, Jr. and Lemeshow (1999). 
+The first data source, called <tt>hmohiv</tt> tracks 100 patients from a US HMO who are infected with HIV, up to the 
+point of their death, or loss to study (hypothetical data). Information is available about their age upon entering 
+the study, as well as their prior drug use. The data is available here 
 [<a href="http://www.ats.ucla.edu/stat/r/examples/asa/hmohiv.csv">CSV</a>].</p>
 
 <p>The second data source, called <tt>uissurv</tt>, tracks 628 individuals who participated in a randomized trial for
@@ -64,6 +64,11 @@ into drug use, or therapy in a communal living setting which was highly structur
 problems were enrolled in the study and tracked until they relapsed into drug use again. The data is available here
 [<a href="https://www.umass.edu/statdata/statdata/data/uissurv.dat">DAT</a>] and was extensively used in published
 work (e.g. McCusker et al. 1995).</p>
+
+<p>The third source is available in the <tt>survival</tt> package, called <tt>heart</tt>. It contains observations on
+103 individuals which were part of the Stanford Heart Transplant Study (1967-1974). The study tracks these individuals,
+only some of which have received a heart transplant, until they die. Information is available on their age, the year
+they have joined the study, and whether they had previously undergone bypass surgery.</p>
 
 <h3>Code</h3>
 <p>Each of the days has an associated syntax file (with a ".R" extension). The file contains all instructions for 
