@@ -1,1 +1,84 @@
-Test
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Workshops</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <!--[if lt IE 8]>
+<link rel="stylesheet" href="stylesheets/ie.css">
+<![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body>
+    <div class="wrapper">
+      <section>
+        <div id="title">
+          <h1>Heidelberg, November 2015</h1>
+          <hr>
+          <span class="credits left">Back to <a href="https://cmbosancianu.github.io/workshops/index.html">Workshops</a></span>
+        </div>
+
+        <h3>
+<a name="workshops" class="anchor" href="#workshops"><span class="octicon octicon-link"></span></a></h3>
+
+<h1>Event History Analysis with R</h1>
+<p>The 2-day workshop is intended as a basic introduction to the logic of event history (survival, reliability)
+analysis, and in the practice of running such an analysis in the R software. The first part of the workshop is
+devoted to basic concepts in survival analysis, which have to be grasped in order to move on to advanced analyses.
+These concepts refer to what a survival probability or a hazard rate is, what is a risk set, and how to use these
+when describing our data. The first part concludes with a look at descriptive survival analysis: examining survival
+and hazard functions for different groups in our data.
+
+The second part of the workshop is fully devoted to inferential survival analysis. We examine here the Cox
+proportional hazards (PH) model, as well as how do detect whether the PH assumption is met. Extensions of the Cox
+PH model are also discussed: the stratified Cox model, as well as how to include time-variant observations in our
+models. All analyses will be done with the help of the <tt>survival</tt> package in R.</p>
+
+<h3>Data</h3>
+<p>We will be relying on multiple data sources throughout the workshop. This is because in some cases I needed to 
+highlight certain statistical properties of the models (e.g. the PH assumption) and this could be done only for
+a particular data set. I have tried, in any case, to keep the number of data sources to a minimum.</p>
+
+<p>In the first day, we will look at data on sovereign debt defaults for a number of countries around the world,
+between 1980 and 2000. The data comes from Carmen Reinhart and Kenneth Rogoff 
+[<a href="http://www.carmenreinhart.com/data/browse-by-topic/topics/7/">URL</a>] and covers the 1800-2007 period.
+For the purposes of my analysis, I considerably restricted the period, and focused only on sovereign debt crises.</p>
+
+<p>On the second day, I use two medical data sets, both used in Hosmer Jr. and Lemeshow (1999). The first data
+source</p>
+
+<h3>Code</h3>
+<p>Each of the days has an associated syntax file (with a ".R" extension). The file contains all instructions for installing needed R packages, reading data and producing statistical output. In addition to these, the file will contain comment on the code, which will appear after a hashtag symbol ("#"). The only thing participants will need to do is replace the working directory in the file to the folder address on their computer, and make sure that the folder structure is the same as mine. That will ensure that no further changes need to be made to the code to make it run on another machine, regardless of whether it is a UNIX or Windows-based system.</p>
+
+<p>With regard to the folder structure, my practice has been to create a different folder for each day, e.g. "/Day-1/". In this folder I usually create 4 sub-folders: <b>Code</b> ("/Day-1/Code/"), <b>Data</b>, <b>Graphs</b>, and <b>Output</b>. The first two are where the syntax file and the data are deposited, while the last two are where graphs and statistical output (tables) are exported. Every syntax file below assumes that these same folders exist on your computer as well.</p>
+
+<h3>Materials</h3>
+<p>Please download the materials found below, arranged based on session. The syntax and unpacked data files should be placed in their respective folders on your machine.</p>
+
+<p> <b>Day 1 (September 3)</b>
+<p>We'll only focus on the "Bayesian" part of "Bayesian analysis", so it will be mostly theoretical. No data or code available for today.</p>
+<ul>
+<li>Slides [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!10189&authkey=!ABfwqdKRmZv0zDo&ithint=file%2cpdf">PDF</a>]</li>
+</ul>
+</p>
+
+<p> <b>Day 2 (September 4)</b>
+<ul>
+<li>Code [available upon request]</li>
+<li>Data [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!10191&authkey=!AJsG6CldoedPEE0&ithint=file%2ccsv">CSV</a>]</li>
+<li>Slides [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!10193&authkey=!ANKuhfoXXQPCSwI&ithint=file%2cpdf">PDF</a>]</li>
+<li>Data and codebook (Cioffi-Revilla and Lai, 2001) [<a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/02016">URL</a>]</li>
+<li>Cleaning script (Cioffi-Revilla and Lai, 2001) [available upon request]</li>
+</ul>
+</p>
+
+<h3>References</h3>
+<p>Hosmer, Jr., David W., and Stanley Lemeshow. 1999. <i>Applied Survival Analysis: Regression Modeling of Time to 
+Event Data</i>. New York: Wiley.</p>
