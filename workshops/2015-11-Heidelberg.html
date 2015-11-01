@@ -51,34 +51,59 @@ between 1980 and 2000. The data comes from Carmen Reinhart and Kenneth Rogoff
 [<a href="http://www.carmenreinhart.com/data/browse-by-topic/topics/7/">URL</a>] and covers the 1800-2007 period.
 For the purposes of my analysis, I considerably restricted the period, and focused only on sovereign debt crises.</p>
 
-<p>On the second day, I use two medical data sets, both used in Hosmer Jr. and Lemeshow (1999). The first data
-source</p>
+<p>On the second day, I rely on two medical data sets, both used in Hosmer, Jr. and Lemeshow (1999). The first data
+source, called <t>hmohiv</t> tracks 100 patients from a US HMO who are infected with HIV, up to the point of their
+death, or loss to study (hypothetical data). Information is available about their age upon entering the study, as 
+well as their prior drug use. The data is available here 
+[<a href="http://www.ats.ucla.edu/stat/r/examples/asa/hmohiv.csv">CSV</a>].</p>
+
+<p>The second data source, called <t>uissurv</t>, tracks 628 individuals who participated in a randomized trial for
+residential treatment for drug use. The trial took place at two locations (A and B) over varying periods of time
+(3, 6, or 12 months). The treatment consisted of either health education and information on how to avoid relapsing
+into drug use, or therapy in a communal living setting which was highly structured. Individuals with drug addiction
+problems were enrolled in the study and tracked until they relapsed into drug use again. The data is available here
+[<a href="https://www.umass.edu/statdata/statdata/data/uissurv.dat">DAT</a>] and was extensively used in published
+work (e.g. McCusker et al. 1995).</p>
 
 <h3>Code</h3>
-<p>Each of the days has an associated syntax file (with a ".R" extension). The file contains all instructions for installing needed R packages, reading data and producing statistical output. In addition to these, the file will contain comment on the code, which will appear after a hashtag symbol ("#"). The only thing participants will need to do is replace the working directory in the file to the folder address on their computer, and make sure that the folder structure is the same as mine. That will ensure that no further changes need to be made to the code to make it run on another machine, regardless of whether it is a UNIX or Windows-based system.</p>
+<p>Each of the days has an associated syntax file (with a ".R" extension). The file contains all instructions for 
+installing needed R packages, reading data and producing statistical output. In addition to these, the file will 
+contain comment on the code, which will appear after a hashtag symbol ("#"). The only thing participants will need 
+to do is replace the working directory in the file to the folder address on their computer, and make sure that the 
+folder structure is the same as mine. That will ensure that no further changes need to be made to the code to make 
+it run on another machine, regardless of whether it is a UNIX or Windows-based system.</p>
 
-<p>With regard to the folder structure, my practice has been to create a different folder for each day, e.g. "/Day-1/". In this folder I usually create 4 sub-folders: <b>Code</b> ("/Day-1/Code/"), <b>Data</b>, <b>Graphs</b>, and <b>Output</b>. The first two are where the syntax file and the data are deposited, while the last two are where graphs and statistical output (tables) are exported. Every syntax file below assumes that these same folders exist on your computer as well.</p>
+<p>With regard to the folder structure, my practice has been to create a different folder for each day, e.g. 
+"/Day-1/". In this folder I usually create 4 sub-folders: <b>Code</b> ("/Day-1/Code/"), <b>Data</b>, <b>Graphs</b>, 
+and <b>Output</b>. The first two are where the syntax file and the data are deposited, while the last two are where 
+graphs and statistical output (tables) are exported. Every syntax file below assumes that these same folders exist 
+on your computer as well.</p>
 
 <h3>Materials</h3>
-<p>Please download the materials found below, arranged based on session. The syntax and unpacked data files should be placed in their respective folders on your machine.</p>
+<p>Please download the materials found below, arranged based on session. The syntax and unpacked data files should 
+be placed in their respective folders on your machine.</p>
 
-<p> <b>Day 1 (September 3)</b>
-<p>We'll only focus on the "Bayesian" part of "Bayesian analysis", so it will be mostly theoretical. No data or code available for today.</p>
+<p> <b>Day 1 (November 2)</b>
+<p>We focus today on basic theoretical concepts in survival analysis, and how to do descriptive summaries of
+survival data in R.</p>
 <ul>
-<li>Slides [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!10189&authkey=!ABfwqdKRmZv0zDo&ithint=file%2cpdf">PDF</a>]</li>
+<li>Slides [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!10241&authkey=!AGTCin-x-ccTNbw&ithint=file%2cpdf">PDF</a>]</li>
+<li>Code [coming soon]</li>
+<li>Data [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!10242&authkey=!AN2JllwEfJoq5Cg&ithint=file%2cRdata">Rdata</a>]</li>
 </ul>
 </p>
 
-<p> <b>Day 2 (September 4)</b>
+<p> <b>Day 2 (November 3)</b>
 <ul>
-<li>Code [available upon request]</li>
-<li>Data [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!10191&authkey=!AJsG6CldoedPEE0&ithint=file%2ccsv">CSV</a>]</li>
-<li>Slides [<a href="https://onedrive.live.com/redir?resid=4FA18A6EE7842E5F!10193&authkey=!ANKuhfoXXQPCSwI&ithint=file%2cpdf">PDF</a>]</li>
-<li>Data and codebook (Cioffi-Revilla and Lai, 2001) [<a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=hdl:1902.1/02016">URL</a>]</li>
-<li>Cleaning script (Cioffi-Revilla and Lai, 2001) [available upon request]</li>
+<li>Slides [coming soon]</li>
+<li>Code [coming soon]</li>
+<li>Data [coming soon]</li>
 </ul>
 </p>
 
 <h3>References</h3>
 <p>Hosmer, Jr., David W., and Stanley Lemeshow. 1999. <i>Applied Survival Analysis: Regression Modeling of Time to 
 Event Data</i>. New York: Wiley.</p>
+<p>McCusker, Jane, Maureen Vickers-Lahti, Anne Stoddard, Rita Hindin, Carol Bigelow, Martha Zorn, Frances Garfield,
+Ray Frost, Craig Love, and Benjamin Lewis. 1995. "The Effectiveness of Alternative Planned Durations of Residential
+Drug Abuse Treatment". <i>American Journal of Public Health</i> <b>85</b>(10): 1426-1429.</p>
