@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-04-09T15:09:32+02:00</updated><id>/feed.xml</id><title type="html">C. Manuel Bosancianu, PhD</title><subtitle>Professional page for Constantin Manuel Bosancianu, PhD, about past academic and non-academic projects, primarily related to statistics and research design.
+</subtitle><author><name>Manuel Bosancianu</name><email>bosancianu@icloud.com</email></author><entry><title type="html">Website revamp</title><link href="/blog/2023-03-26-new-website/" rel="alternate" type="text/html" title="Website revamp" /><published>2023-03-26T00:00:00+01:00</published><updated>2023-03-27T22:58:25+02:00</updated><id>/blog/new-website</id><content type="html" xml:base="/blog/2023-03-26-new-website/"><![CDATA[<p class="lead">Website received a revamp!</p>
+
+<p>I was using the same website format for more than 5 years now, and I had grown to appreciate its virtues:</p>
+
+<ol>
+  <li>Standard charcoal background with grey writing, for minimal eye strain</li>
+  <li>Basic, inter-linked <code class="language-plaintext highlighter-rouge">HTML</code> files that never broke, and could be edited with any basic code editor</li>
+  <li>Exclusive focus on information, with 0 distractions (no animations, no dropdown menus)</li>
+  <li>Blazing-fast loading times</li>
+  <li>Displayed in the same way on every device</li>
+</ol>
+
+<h2 id="reasons-to-change">Reasons to change</h2>
+
+<p>Over the past few years, though, I’ve been involved in a wider range of projects than before. These projects produced a larger set of outputs: from Shiny dashboards for our Covid-19 project in Kampala, and graphics for our paper on political inequality, to code files, policy briefs, pre-analysis plans, and even sampling protocols based on GIS data.</p>
+
+<p>The need to display some of these outputs in a more user-friendly format required moving past the simple format I used before. And so, a few months ago, I embarked on a revamp of the website. What you see now is the product of that overhaul.</p>
+
+<h2 id="the-jekyll-way">The Jekyll way</h2>
+
+<p>I may write in the future a longer blog post detailing the <em>ins</em> and <em>outs</em> of the whole process. For now, the key details are that I relied on a commonly-used static site generator called <a href="https://jekyllrb.com">Jekyll</a>. This takes a set of <code class="language-plaintext highlighter-rouge">Markdown</code> files with content, and <em>weaves</em> them together based on a template (I use <a href="https://hydejack.com">Hydejack</a> here) to produce a full-fledged website, complete with menus, blog posts, icons etc.</p>
+
+<h2 id="map">Map</h2>
+
+<p>I don’t want to bore you with too much information. Either way, it’s more fun to poke around this website yourself and discover what the various sections contain.</p>
+
+<p>Suffice to say right now that you can find here:</p>
+
+<ul>
+  <li>my <a href="../../vitae/">vitae</a>, in both academic and business format</li>
+  <li>some of the stats <a href="../../teaching/">courses</a> I’ve taught in the past</li>
+  <li>the research and data <a href="../../projects/">projects</a> I’ve been involved in so far (one I’m particularly proud of is the <a href="../../projects/kcca/">Kampala City Charter</a> one)</li>
+</ul>
+
+<p>Though it’s not here yet, the site will also soon contain a dedicated section for a few of the data visualization projects I am currently working on. That’s a promise! 😃</p>
+
+<p>I hope you find the information useful, and that you keep checking this space for regular updates!</p>]]></content><author><name>Manuel Bosancianu</name></author><category term="blog" /><summary type="html"><![CDATA[Initial post describing the new website format.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/assets/img/blog/blog_img_001.jpeg" /><media:content medium="image" url="/assets/img/blog/blog_img_001.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
