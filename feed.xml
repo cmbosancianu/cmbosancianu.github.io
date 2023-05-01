@@ -1,5 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://cmbosancianu.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cmbosancianu.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-04-20T21:30:59+02:00</updated><id>https://cmbosancianu.github.io/feed.xml</id><title type="html">C. Manuel Bosancianu, PhD</title><subtitle>Professional page for Constantin Manuel Bosancianu, PhD, about past academic and non-academic projects, primarily related to statistics and research design.
-</subtitle><author><name>Manuel Bosancianu</name><email>bosancianu@icloud.com</email></author><entry><title type="html">Website revamp</title><link href="https://cmbosancianu.github.io/blog/2023-03-26-new-website/" rel="alternate" type="text/html" title="Website revamp" /><published>2023-03-26T00:00:00+01:00</published><updated>2023-03-27T22:58:25+02:00</updated><id>https://cmbosancianu.github.io/blog/new-website</id><content type="html" xml:base="https://cmbosancianu.github.io/blog/2023-03-26-new-website/"><![CDATA[<p class="lead">Website received a revamp!</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://cmbosancianu.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cmbosancianu.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-01T23:14:04+02:00</updated><id>https://cmbosancianu.github.io/feed.xml</id><title type="html">C. Manuel Bosancianu, PhD</title><subtitle>Professional page for Constantin Manuel Bosancianu, PhD, about past academic and non-academic projects, primarily related to statistics and research design.
+</subtitle><author><name>Manuel Bosancianu</name><email>bosancianu@icloud.com</email></author><entry><title type="html">How parties shape participation disparities</title><link href="https://cmbosancianu.github.io/blog/2023-05-01-parties-pol-inequality/" rel="alternate" type="text/html" title="How parties shape participation disparities" /><published>2023-05-01T00:00:00+02:00</published><updated>2023-05-01T23:10:31+02:00</updated><id>https://cmbosancianu.github.io/blog/parties-pol-inequality</id><content type="html" xml:base="https://cmbosancianu.github.io/blog/2023-05-01-parties-pol-inequality/"><![CDATA[<p class="lead">Interesting changes over time in turnout inequality between socio-economic groups can be seen in the case of the United Kingdom. A popular account explains these changes by using aggregate-level income inequality. I believe a different account is more potent.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p><strong>What is the relationship between electoral turnout, economic inequality, and party dynamics?</strong> I’ve been focusing on this question both in my doctoral <a href="/assets/docs/PhD-thesis.pdf">dissertation</a>, as well as in a more recent <a href="https://osf.io/v2m46/">manuscript</a>. I thought I’d present the central puzzle here, and what I think the answer to it is, using the example of a single context: the United Kingdom.</p>
+
+<p>Here are the key insights:</p>
+
+<ol>
+  <li>There are good reasons to believe economic inequality impacts turnout, with a disproportionately stronger impact on more socio-economically disadvantaged voters</li>
+  <li>However, this causal link is based on (1) strong assumptions about voters’ ability to recognize trends in inequality and react to them, and on (2) abstracting away where these macro-economic trends come from and how political actors react to them</li>
+  <li>I argue here that it’s more likely political party dynamics are the <strong>cause</strong> of both economic inequality trends and disparities in turnout</li>
+</ol>
+
+<p>I illustrate this account based on the experience of the United Kingdom between 1966 and 2019, using individual-level turnout self-reports from the <a href="https://www.britishelectionstudy.com">British Election Study</a>, and aggregate data about income inequality, union density, and party ideological shifts.</p>
+
+<h2 id="turnout-trends-over-time">Turnout trends over time</h2>
+
+<p>The first aspect to settle is: <strong>have there been meaningful changes in turnout in the UK over this period?</strong>. I show how this dynamic looks like for 2 separate groups in society, defined based on their socio-economic status (SES): higher-SES (those with at least some college education, and in the top 33% of the income distribution) and lower-SES respondents (those with no high school degree, or lower, and in the bottom 33% of the income distribution in that respective year).</p>
+
+<p>Sub-group electoral trends can’t be divined from aggregate electoral data, so here I use the individual-level self-reported turnout data found in the <em>British Election Study</em>. I compute predicted turnout probabilities based on a standard logistic regression using age, squared age, gender, marital status, education, and income. Through the simulation procedure implemented in the <code class="language-plaintext highlighter-rouge">clarify</code> package for <code class="language-plaintext highlighter-rouge">R</code> (<a href="https://cran.r-project.org/web/packages/clarify/vignettes/clarify.html">here</a>), it was easy to obtain predicted probabilities for turnout, together with their associated 95% confidence intervals.</p>
+
+<p>These probabilities are presented in the form of a dot-and-whisker plot in Figure 1. Overlaid on these 2 turnout trends, I also show the dynamic for net income inequality over the same period, as proxied by the Gini index.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> The vertical axis of the figure measures the predicted turnout of the low-SES and high-SES group (depicted in different colors); the <em>gap</em> is the difference between the two groups.</p>
+
+<figure>
+  <figcaption><b>Figure 1</b>: Trends in the turnout gap between socio-economic groups: United Kingdom, 1966-2019</figcaption>
+  <img src="../../assets/img/blog/202305/blog_img_002.jpg" alt="Trends in the turnout gap" />
+</figure>
+
+<p>The main takeaway from the figure is that, over the 1985-2010 period, there has been a gradual electoral <em>demobilization</em> of the most socio-economically vulnerable section of the British electorate. Turnout among voters at the lower end of the socio-economic spectrum dropped from around 80-85% in 1985 to about 50% in 2010.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> This is even more surprising when compared to the corresponding trend for higher SES voters, which exhibits trendless fluctuation at around 85-95%.</p>
+
+<h2 id="explanations">Explanations</h2>
+
+<p><strong>What is the most convincing explanation for why this has happened?</strong> A popular argument attributes this to feelings of political inefficacy triggered by economic power imbalances (<a href="https://doi.org/10.1111/j.1540-5907.2007.00298.x">Solt, 2008</a>). In this account (“<em>relative power</em>”), constantly growing economic inequalities provide cues for lower-SES voters that the political system is mostly unresponsive to their preferences. Irrespective of whether parties of the Left or Right end up in office, the “Matthew principle” continues to operate: those who already have, gain more. This is combined with the expectation that, in this kind of system, those with financial means are more influential when promoting their preferences. In the face of these two dynamics, the rational response is political <em>demobilization</em> on the part of lower-SES citizens.</p>
+
+<p>The trends from Figure 1 above certainly tend to lend support to this account. Starting from the late 1970s we see a sustained growth in income inequality which lasts until the late 1990s.<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> With a 10-year delay, which is plausible given the time it takes for such aggregate phenomena to be noticed by voters, this is followed by the demobilization onset I spoke about above.</p>
+
+<p>Other accounts (<a href="https://doi.org/10.2307/2669299">Radcliff and Davis, 2000</a>) stress the impact of declining levels of unionization. This is also supported by the data (see the bottom third panel in Figure 2 below): the UK went from a union density rate of 50.7% in 1979, to 28.9% in 2001 (data retrieved from the OECD/AIAS <a href="https://www.ictwss.org/">ICTWSS</a> database on April 27, 2023). As unions act as powerful agents of working class electoral mobilization, we would expect this trend to be associated with a lower participation rate of lower-SES voters.<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup></p>
+
+<h2 id="problems-with-the-relative-power-account">Problems with the <em>relative power</em> account</h2>
+
+<p>There are a few challenges to applying the <em>relative power</em> account to the dynamics presented above. The first of which was already hinted at: there is a high degree of collinearity between the union density trend and that for income inequality. Both have been linked with electoral demobilization and, more importantly, with each other (<a href="https://doi.org/10.1111/bjir.12045">Pontusson, 2013</a>). In these circumstances, it’s difficult to clearly point to economic inequality as the key factor.</p>
+
+<p>Figure 2 below shows this for 8 countries, using data from the OECD/AIAS <a href="https://www.ictwss.org/">ICTWSS</a>, and the trends are unmistakable. Take the example of Australia: starting from 1975, union density is on an almost continuous downward trend, while income inequality trends consistently upward. A similar dynamic is visible for the US, the Netherlands starting from 1980, Germany starting from 1990, and, most crucially, the United Kingdom between the late 1970s and 2000.<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup> Of these 8 countries, only Italy displays a correlation over time between the two trends that is weaker than 0.78, in absolute terms.</p>
+
+<figure>
+  <figcaption><b>Figure 2</b>: Union density and income inequality longitudinal dynamics: 1960-2020</figcaption>
+  <img src="../../assets/img/blog/202305/blog_img_003.jpg" alt="Union density trends" />
+</figure>
+
+<p>The second difficulty is that most people don’t notice inequality, particularly if it happens at the top (<a href="https://doi.org/10.1111/ecpo.12103">Gimpelson and Treisman, 2018</a>). Even in a period of accelerating inequality, only 42% of Americans believed that economic disparities worsened between 2000 and 2010. On the other hand, 80% of French(wo)men believed inequality had worsened in their country over the same period, even though objectively it had been stagnant (<a href="https://www.worldcat.org/title/price-of-inequality-how-todays-divided-society-endangers-our-future/oclc/797279304?page=citation">Stiglitz, 2012</a>).</p>
+
+<p>Third, it’s not clear that feelings of discontent are the natural response to rising inequality. As <a href="https://doi.org/10.2307/1882024">Hirschman and Rothschild (1973)</a> point out, the response to inequality could very well be optimism, as it indicates economic growth. Under the assumption that gains at the top trickle down, more inequality could make lower-SES citizens hopeful that soon their lot will improve as well.</p>
+
+<p>Finally, it is also plausible that the reaction to growing inequality is <em>more</em> mobilization. After all, periods of heightened economic inequality are fertile ground for electoral appeals by Left parties. Under such conditions, appeals to “soak the rich” should find a very receptive audience; if anything, this should increase turnout among more disadvantaged citizens.</p>
+
+<p><strong>If the economic inequality account is tenuous, is there another factor that provides a more consistent story?</strong></p>
+
+<h2 id="party-dynamics-over-time">Party dynamics over time</h2>
+
+<p><strong>I believe that precisely the party dynamics hinted at above hold the key to a more comprehensive answer.</strong> The extent to which political parties propose more extreme economic platforms can shape both trends in economic inequality, as well as the willingness of lower-SES voters to vote.</p>
+
+<p>Platform convergence diminishes choice, and increases the difficulty of choosing in terms of information acquisition, which should be more consequential for voters with lower levels of education. At the same time, when parties move away from the ideal policy point of their constituency, electoral abstention (due to <em>alienation</em> or <em>indifference</em>) may ensue, as the policies proposed are either too far away from the voter’s preferences to justify participation, or are too similar to each other, or both <a href="https://doi.org/10.1007/s11109-005-9002-1">(Adams et al., 2006)</a>. Party politics also help explain the level of economic inequality in a country, via the policies parties implement once elected into office <a href="https://doi.org/10.1017/S0003055403000789">(Korpi and Palme, 2003)</a>.</p>
+
+<p>Figure 3 below presents these dynamics for 2 overarching dimensions, a <em>socio-economic</em> one, and a <em>traditional values</em> one, for the Tories and Labour in the UK. The first dimension refers to issues such as redistribution, deregulation of the economy, nationalization, as well as relationship to unions. The second dimension targets issues such as patriotism, national way of life, importance of law and order, and multiculturalism. In both cases, support or opposition to these policy goals is determined based on statements made in the election manifestos of these respective parties (see <a href="https://manifesto-project.wzb.eu/tutorials/primer">here</a>). The figure presents the position of each party for each available election; measurements in the more distant past are presented in a more faded color shade.</p>
+
+<figure>
+  <figcaption><b>Figure 3</b>: Conservative and Labour party dynamics on 2 axes of competition: 1964-2019</figcaption>
+  <img src="../../assets/img/blog/202305/blog_img_004.jpg" alt="Party dynamics over time" />
+</figure>
+
+<p>Figure 3 shows that throughout the period when participation rates between lower-SES and higher-SES citizens were roughly comparable, the policy profiles of Labour and Conservatives were relatively distinct. Throughout the 1960s and early 1970s, the two parties occupied distinct policy spaces, with Labour almost consistently more in favor of redistribution than the Tories, and more supportive of cosmopolitanism. This reached its peak in the 1979 and 1983 elections when it came to economic issues, with the two parties at virtually maximum polarization. With the stakes of each election so high, it is perhaps unsurprising that the turnout disparity between the two types of voters was small.</p>
+
+<p>This all changes starting with the 1997 election and right up until the 2015 one, when the two parties essentially <strong>occupy the same ideological space</strong>, both on the socio-economic axis and the traditional values one. Though the transformation of Labour into <em>New Labour</em> under under Neil Kinnock, John Smith, and Tony Blair is often mentioned as the key causal factor, we can also see a moderation of the Conservative Party. In this latter case, under the stewardship of John Major, the party had to accept that some government programs could not be cut further. Irrespective of the reason, this uncanny similarity of ideological profiles matches very well the sharp decline in participation by lower-SES voters seen in Figure 1. Parties that are so alike in their electoral offer (1) make it hard for voters with limited amounts of political information to distinguish between them, and (2) reduce the incentives such voters have to make an electoral choice. These likely represent 2 strong mechanisms through which the effect responsible for the demobilization seen in Figure 1 is transmitted.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The key takeaway from these inter-connected pieces of evidence is that <strong>party politics matter</strong>, both for the distribution of income in society and for patterns of participation in the electorate. Though pressures of globalization, technological change and immigration are potent, governments can manage them, as the diverging trajectories in economic inequality between 1980 and 2000 in the UK, Canada, and Netherlands show.</p>
+
+<p>Party choices also matter for the shifting dynamics seen in political participation. Parties’ choices as to which constituency to target with what message impacts voters’ assessment of the utility of participation, and the perceived stakes of the election. In a more direct manner, these choices also alter the costs of participation by supplying the voter with processed political information and voting recommendations. In turn, these factors influence the turnout decision.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>“Net income” represents disposable income, after taxes and transfers. Higher values of the Gini index indicate a higher degree of economic inequality. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>The late 2010s saw a rebound in this group’s aggregate turnout rates, which hovered around 60-65%. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>If anything, the trend is muted, given that the Gini index is less sensitive to income changes at the tails of the distribution. Using a ratio like P90/P10 would likely result in a more dramatic trend. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Although powerful, these mechanisms don’t <em>guarantee</em> that lower-SES citizens will always have lower average participation rates, as the work of <a href="https://doi.org/10.1111/ajps.12134">Kasara and Suryanarayan (2015)</a> shows. <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>A notable absence from the figure are Scandinavian countries. Similar trends are visible there as well. They are excluded from this display because their extremely high unionization rates would stretch the Y-axis to the point of making trends in other countries barely visible. <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name>Manuel Bosancianu</name></author><category term="blog" /><category term="income inequality" /><category term="party dynamics" /><category term="visualization" /><summary type="html"><![CDATA[What explains turnout inequality trends in the UK?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cmbosancianu.github.io/assets/img/blog/202305/blog_img_001.jpeg" /><media:content medium="image" url="https://cmbosancianu.github.io/assets/img/blog/202305/blog_img_001.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Website revamp</title><link href="https://cmbosancianu.github.io/blog/2023-03-26-new-website/" rel="alternate" type="text/html" title="Website revamp" /><published>2023-03-26T00:00:00+01:00</published><updated>2023-03-27T22:58:25+02:00</updated><id>https://cmbosancianu.github.io/blog/new-website</id><content type="html" xml:base="https://cmbosancianu.github.io/blog/2023-03-26-new-website/"><![CDATA[<p class="lead">Website received a revamp!</p>
 
 <p>I was using the same website format for more than 5 years now, and I had grown to appreciate its virtues:</p>
 
